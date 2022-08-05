@@ -1,24 +1,26 @@
 import { useState, useEffect } from 'react';
 
-function IPAddress() {
+function IPAddress({ url }) {
   const [ipAddress, setIpAddress] = useState([]);
 
   useEffect(() => {
     getIP();
   }, []);
 
-  const getIP = () =>
-    fetch('https://api.ipify.org?format=json')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('data', data);
-        setIpAddress(data);
-      });
+  async function getIP() {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      console.log('data', data);
+      setIpAddress(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
-    <div className='IP-card'>
-      <p>Public IP Address</p>
-      <p>{ipAddress.ip}</p>
+    <div className='ip-address-display'>
+      {ipAddress.ip ? <p>{ipAddress.ip}</p> : <p>'Loading'</p>}
     </div>
   );
 }

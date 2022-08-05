@@ -1,6 +1,8 @@
 body {
   background-color: #f4f5f6;
   font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
@@ -14,22 +16,23 @@ body {
   margin-top: 1em;
 }
 
-.data-card {
+.ip-address-display{
   border: 3px solid #000000;
   border-radius: 5px;
   color: black;
   width: fit-content;
   min-width: 150px;
-  background-color: #9e9ea2;
+  background-color: #b9b9be;
   margin: 20px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 }
 
-.card-container {
+.exhibit-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -37,7 +40,7 @@ body {
   margin: 8px;
 }
 
-.user-data-title {
+.exhibit-header {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 }
