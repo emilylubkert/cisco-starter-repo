@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import './IPAddress.css'
 
 function IPAddress({ url }) {
   const [ipAddress, setIpAddress] = useState([]);
 
   useEffect(() => {
     getIP();
+    // eslint-disable-next-line 
   }, []);
 
   async function getIP() {
@@ -19,7 +21,7 @@ function IPAddress({ url }) {
 
   return (
     <div className='ip-address-display'>
-      {ipAddress.ip ? <p>{ipAddress.ip}</p> : <p>'Loading'</p>}
+      {ipAddress.ip ? <p className='ip-address'>{ipAddress.ip}</p> : <p>'Loading'</p>}
     </div>
   );
 }

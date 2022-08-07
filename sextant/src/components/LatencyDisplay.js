@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { w3cwebsocket } from 'websocket';
+import './LatencyDisplay.css'
 const client = new w3cwebsocket('ws://localhost:55455');
 
 function LatencyDisplay() {

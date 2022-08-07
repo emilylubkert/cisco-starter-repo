@@ -7,40 +7,11 @@ body {
 
 .App {
   text-align: center;
-}
-
-.banner-title {
-  color: #009EDC;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  margin-top: 1em;
-}
-
-.ip-address-display{
-  border: 3px solid #000000;
-  border-radius: 5px;
-  color: black;
-  width: fit-content;
-  min-width: 150px;
-  background-color: #b9b9be;
-  margin: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-}
-
-.exhibit-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.logo {
-  width: 100px;
-  margin: 8px;
-}
 
-.exhibit-header {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-}
+

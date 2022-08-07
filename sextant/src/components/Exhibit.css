@@ -1,0 +1,16 @@
+.exhibit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    color: black;
+    width: fit-content;
+    background-color: #F0FBFF;
+    min-width: 400px;
+    margin: 20px;
+}
+
+.exhibit-header {
+    font-weight: 700;
+}
